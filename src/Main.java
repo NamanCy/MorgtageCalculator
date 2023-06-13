@@ -29,7 +29,7 @@ public class Main {
                 monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
                 break;
             }
-            System.out.println("Enter a value between 1 and 30");
+            System.out.println("Enter a valid value between 1 and 30");
         }
 
         while (true) {
@@ -39,7 +39,7 @@ public class Main {
                 numberOfPayments = years * MONTHS_IN_YEAR;
                 break;
             }
-            System.out.println("Enter a value between 1 and 30");
+            System.out.println("Enter a valid value between 1 and 30");
         }
 
         double mortage = principal * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments)/
